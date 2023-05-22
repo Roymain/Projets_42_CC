@@ -33,7 +33,7 @@ Remplacer dir_push_swap par le dossier de push_swap
 Création de la librairie
 ----------
 
->make # compile lib (create libft.a)
+>make
 >
 ou depuis un autre dossier
 >make -C dir_push_swap
@@ -42,8 +42,7 @@ ou depuis un autre dossier
 ----------
 
 >./push_swap 1 2 8 4 6 7 -258 1465328 #...
-# usage: ./push_swap numbers
 
 Utilisation du checker
 ----------
-./push_swap numbers | checker_os numbers
+>./push_swap numbers | checker_os numbers
