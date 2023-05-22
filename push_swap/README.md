@@ -34,9 +34,6 @@ Création de la librairie
 ----------
 
 >make
->
-ou depuis un autre dossier
->make -C dir_push_swap
 
 Éxecution
 ----------
