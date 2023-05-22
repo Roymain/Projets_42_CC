@@ -41,7 +41,7 @@ make -C dir_push_swap
 Éxecution
 ----------
 
-./push_swap 1 2 8 4 6 7 -258 1465328 #...
+>./push_swap 1 2 8 4 6 7 -258 1465328 #...
 # usage: ./push_swap numbers
 
 Utilisation du checker
