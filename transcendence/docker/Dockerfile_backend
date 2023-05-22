@@ -1,0 +1,24 @@
+###################
+# BUILD FOR LOCAL DEVELOPMENT
+###################
+
+FROM node:latest As development
+
+WORKDIR /usr/src/app
+
+COPY --chown=node:node  ./backend/nest-cli.json ./
+COPY --chown=node:node  ./backend/package.json  ./
+COPY --chown=node:node  ./backend/tsconfig.json ./
+COPY --chown=node:node  ./backend/.eslintrc.js  ./
+COPY --chown=node:node  ./backend/.prettierrc   ./
+
+RUN yarn install
+
+RUN mkdir dist
+RUN chown node:node dist
+
+VOLUME [ "/usr/src/app/shared" ]
+VOLUME [ "/usr/src/app/src" ]
+
+COPY --chown=node:node docker/entrypoint/entrypoint_backend.sh ./
+ENTRYPOINT ["bash", "./entrypoint_backend.sh"]
