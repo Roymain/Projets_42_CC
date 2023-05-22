@@ -33,10 +33,10 @@ Remplacer dir_push_swap par le dossier de push_swap
 Création de la librairie
 ----------
 
-make # compile lib (create libft.a)
+>make # compile lib (create libft.a)
+>
 ou depuis un autre dossier
-
-make -C dir_push_swap
+>make -C dir_push_swap
 
 Éxecution
 ----------
