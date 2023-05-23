@@ -10,10 +10,13 @@ jeu Pong !
 Projet dockerisé.
 
 TypeScript
-backend > nestJS
-frontend > reactJS
+
+backend : nestJS
+
+frontend : reactJS
 
 
 
 [Valktaelen](https://github.com/valktaelen)
+
 [Waxdred](https://github.com/waxdred/42)
