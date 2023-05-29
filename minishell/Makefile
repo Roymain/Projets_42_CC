@@ -1,5 +1,5 @@
 CFLAGS = -Wall -Wextra -Werror
-LDFLAGS = -L./libft  -L ~/.brew/opt/readline/lib -I ~/.brew/opt/readline/include
+LDFLAGS = -L./libft  -L ~/.brew/opt/readline/lib -I ~/.brew/opt/readline/include -g3 -fsanitize=address
 LDLIBS = -lft -lreadline
 SRC_DIR = ./srcs
 OBJ_DIR = ./objs
